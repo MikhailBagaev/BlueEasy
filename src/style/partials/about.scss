@@ -1,0 +1,33 @@
+.stn-about {
+	@extend .stn-padding;
+	@include bg-image($img-folder + 'camera.jpg');
+	color: #fff;
+}
+.social-links {
+	li {
+		display: inline-block;
+		margin-right: 20px;
+		@media (max-width: 450px) {
+			margin-right: 4px;
+		}
+	}
+	a {
+		display: table;
+		color: #fff;
+		width: 65px;
+		height: 65px;
+		font-weight: 100;
+		font-size: 30px;
+		text-align: center;
+		border: 2px solid #fff;
+		transition: all .3s ease-in-out;
+		&:hover {
+			color: $accent;
+			border-color: $accent;
+		}
+        i {
+        	display: table-cell;
+        	vertical-align: middle;
+        }
+	}
+}

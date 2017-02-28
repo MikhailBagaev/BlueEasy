@@ -1,0 +1,50 @@
+.site-footer {
+	@extend .stn-padding;
+	padding-bottom: 43px;
+	background-color: #353f47;
+	color: $font;
+	font-size: 0.857em;
+	font-family: 'SegoeUIBold', 'Arial', sans-serif;
+	text-transform: uppercase;
+	.nav-footer {
+		float: left;
+		li {
+			display: inline-block;
+			&::before {				
+				content: '|';				
+			}
+			&:first-child {
+				&::before {
+					content: '';
+				}
+				a {
+					padding-left: 0;
+				}
+			}
+
+		}
+		a  {
+			color: inherit;
+			display: inline-block;
+			padding: 0 10px;
+			&:hover {
+				color: $accent;
+			}
+		}		
+		@media (max-width: 360px) {
+			float: none;
+			text-align: center;
+			a {
+				padding: 0 6px;
+			}			
+		}		
+	}//.nav-footer
+}
+.copyright {
+    float: right;
+    @media (max-width: 360px) {
+    	float: none;
+    	text-align: center;
+    }
+}
+

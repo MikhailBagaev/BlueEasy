@@ -1,0 +1,161 @@
+//forms, buttons, navs, dialogs etc.
+
+//menu
+.horizontal-nav {    	
+    li {
+    	display: inline-block;
+    	margin-left: 15px;
+        a {
+        	display: block;
+        	border: 2px solid transparent;
+        	text-transform: uppercase;
+        	text-decoration: none;
+        	color: #fff;
+        	font-weight: 600;
+        	padding: 10px 17px;
+        	line-height: 1;
+        	transition: 0.3s;
+    	    &.active {
+    	    	color: $accent;
+    	    	border-color: $accent; 
+    	    }
+    	    &:hover {
+    	    	color: $accent;
+    	    }		
+    	}    
+    } //li 
+    &.black-font a {
+        color: $font;
+    }      	
+}
+//responsive menu
+.main-nav-trigger {
+    font-size: 40px;
+    color: #fff;
+    float: right;
+    line-height: 1;
+    display: none;
+} 
+.trigger-nav.black {
+    color: $font;
+}
+
+@media (max-width: 992px) {
+
+    .main-logo {
+        float: left;
+    }
+    .main-nav-trigger {
+        display: block;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        &:hover {
+            color: $accent;
+        }        
+    }
+    .site-nav {
+        position: relative;       
+    }
+    .site-nav .horizontal-nav {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;        
+        background-color: $overlay;
+        display: none;        
+        li {
+            display: block;
+            width: 100%;
+            margin-left: 0;
+            text-align: center;
+            border-bottom: 1px solid lighten($overlay, 5%);
+        }    
+        a {
+            display: inline-block;
+            padding: 20px 30px;
+            &.active {
+                border-color: transparent;    
+            }                        
+        }   
+    } //.horizontal-nav
+    //portfolio menu 
+    .tab-wrapper {
+        position: relative;
+    }
+
+    .tab-menu.horizontal-nav {
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        left: 0; 
+        z-index: 2; 
+        background-color: $overlay;       
+        display: none;        
+        li {
+            display: block;
+            width: 100%;
+            margin-left: 0;            
+            text-align: center;
+            border-bottom: 1px solid lighten($overlay, 5%);
+        }    
+        a {
+            display: inline-block;
+            padding: 20px 30px;
+            color: #fff;
+            &.active {
+                border-color: transparent;    
+            }                        
+        } 
+    }
+
+} //media 992px
+
+//buttons 
+.btn-ghost-grey {
+    @include btn-ghost;
+}
+.nav-footer {
+    a {
+        &:hover {
+            color: $accent;
+        }
+    }
+}
+//inputs 
+.form-group {
+    margin-bottom: 35px;    
+}
+.form-control {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 0;
+    height: 60px;
+    width: 100%;
+    padding: 0 15px;
+    color: #fff;
+}
+textarea.form-control {
+    height: 215px;
+    resize: none;
+}
+label {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.btn-submit {
+    width: 100%;
+    background-color: $accent;
+    border: none;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 25px 0;
+    font-weight: 900;
+    border: 2px solid $accent;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: transparent;
+        color: $accent;
+    }
+}
+
+

@@ -1,0 +1,102 @@
+// .sprite-frame,
+// .sprite-instant,
+// .sprite-serious,
+// .sprite-coffee {
+//     display: inline-block;
+//     background: url($img-folder + 'sprite-sheet.png') no-repeat;
+//     overflow: hidden;
+//     text-indent: -9999px;
+//     text-align: left;   
+// }
+ 
+// .sprite-frame {
+//     background-position: -5px -0px;
+//     width: 48px;
+//     height: 48px;
+// }
+
+// .sprite-instant {
+//     background-position: -5px -53px;
+//     width: 48px;
+//     height: 48px;
+// }
+
+// .sprite-serious {
+//     background-position: -5px -106px;
+//     width: 47px;
+//     height: 48px;
+// }
+
+// .sprite-coffee {
+//     background-position: -5px -156px;
+//     width: 34px;
+//     height: 48px;
+// }
+
+.sprite-frame,
+.sprite-instant,
+.sprite-serious,
+.sprite-coffee,
+.sprite-quotes {
+    display: inline-block;
+    background: url($img-folder + 'sprite-sheet.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+} 
+.sprite-frame {
+    background-position: -5px -0px;
+    width: 48px;
+    height: 48px;
+}
+.sprite-instant {
+    background-position: -5px -53px;
+    width: 48px;
+    height: 48px;
+}
+.sprite-serious {
+    background-position: -5px -106px;
+    width: 47px;
+    height: 48px;
+}
+.sprite-coffee {
+    background-position: -5px -156px;
+    width: 34px;
+    height: 48px;
+}
+.sprite-quotes {
+    background-position: -5px -209px;
+    width: 32px;
+    height: 26px;
+    float: right;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-google-plus:before {
+  content: "\e900";
+}
+.icon-coffee:before {
+  content: "\f0f4";
+}
+.icon-dribble:before {
+  content: "\f17d";
+}

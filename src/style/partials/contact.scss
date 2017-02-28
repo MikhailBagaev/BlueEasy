@@ -1,0 +1,11 @@
+.stn-contact {
+	@extend .stn-padding;
+	@include bg-image($img-folder + 'lense.jpg');
+    color: #fff;    
+}
+.form-text-col {
+	margin-top: 22px;
+	@media (max-width: 768px) {
+        margin-top: 0;
+	}
+}

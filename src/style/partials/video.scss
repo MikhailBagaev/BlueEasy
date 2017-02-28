@@ -1,0 +1,34 @@
+.stn-video {
+	@extend .stn-padding;
+	background-color: #515f67;
+	color: #fff;
+	.btn-ghost-grey {
+		margin-bottom: 50px;
+	}
+	@media (max-width: 600px) {
+		padding-bottom: 128px;
+	}
+	@media (max-width: 450px) {
+		padding-bottom: 178px;
+	}
+}
+.stn-video-col {
+	margin-top: -80px;
+	@media (max-width: 992px) {
+		margin-top: 0;
+	} 
+}
+//iframe responsive
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; //16:9
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+

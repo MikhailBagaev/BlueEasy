@@ -1,0 +1,33 @@
+.stn-heading {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 2.143em;
+	margin-bottom: 40px;
+	&::after {
+		content: '';
+		width: 45px;
+		height: 2px;
+		background-color: #fff;
+		margin-top: 10px;
+	}
+	&.black-line::after {
+		background-color: $font;
+	}
+}
+.stn-services {
+	@extend .stn-padding;
+	background-color: $accent;
+	color: #fff;
+	font-weight: 500;
+	h3 {
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 1.714em;
+		line-height: 1;
+		margin-top: 20px;
+		margin-bottom: 14px;
+	}
+	[class^="col-"] {
+		@media (max-width: 1200px) {margin-bottom: 50px;}
+	}
+}

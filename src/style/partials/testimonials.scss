@@ -1,0 +1,15 @@
+.stn-testimonials {
+	@extend .stn-padding;	
+}
+.tst-quote {
+	font-size: 2em;
+	font-weight: 300;
+	line-height: 50px;	
+	cite {
+		display: block;
+		color: $accent;
+		font-size: 0.5em;
+		font-weight: 600;
+		margin-top: 30px;
+	}
+}

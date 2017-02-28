@@ -1,0 +1,29 @@
+.site-header {
+	@include bg-image($img-folder + 'header-bg.jpg');
+    height: 100%;    
+    img {
+    	margin-top: (38px - 23px)/2;
+    }
+}
+.site-nav {
+	background-color: rgba($overlay, 0.85);	
+	padding: 51px 0;
+	.horizontal-nav {
+		float: right;
+	}    
+}
+.hero-heading {
+	color: white;
+	font-size: 3em;
+	font-family: "SegoeUILight", "Arial", sans-serif;
+	font-weight: 300;
+	line-height: 75px;
+	text-transform: uppercase;
+	margin: 250px 0;
+	text-align: center;
+	span {
+		background-color: rgba($overlay, 0.85);
+		padding: 0 20px;
+		font-weight: 300;
+	}
+}
